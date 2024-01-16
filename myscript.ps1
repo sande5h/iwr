@@ -11,6 +11,7 @@ function Get-UserInput {
 }
 
 function Show-Menu {
+    Clear-Host
     Write-Host "1. Get Hello World"
     Write-Host "2. Get User Input"
     Write-Host "Q. Quit"
