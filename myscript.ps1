@@ -7,7 +7,6 @@ function Get-UserInput {
     Write-Output "You entered: $input"
 }
 
-
 function Show-Menu {
     Clear-Host
     Write-Host "1. Get Hello World"
@@ -19,9 +18,15 @@ while ($true) {
     Show-Menu
     $choice = Read-Host "Enter your choice"
 
-    switch ($choice) {
-        '1' { Get-HelloWorld }
-        '2' { Get-UserInput }
+    switch ($choice.ToUpper()) {
+        '1' { 
+            Get-HelloWorld
+            Read-Host "Press Enter to continue"
+        }
+        '2' { 
+            Get-UserInput
+            Read-Host "Press Enter to continue"
+        }
         'Q' { break }
         default { Write-Host "Invalid choice. Try again." }
     }
