@@ -1,3 +1,13 @@
+function Get-HelloWorld {
+    Write-Output "Hello, World!"
+}
+
+function Get-UserInput {
+    $input = Read-Host "Enter something:"
+    Write-Output "You entered: $input"
+}
+
+
 function Show-Menu {
     Clear-Host
     Write-Host "1. Get Hello World"
