@@ -18,6 +18,7 @@ function Show-Menu {
 }
 
 while ($true) {
+    Clear-Host
     Show-Menu
     $choice = Read-Host "`nEnter your choice"
 
